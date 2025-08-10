@@ -2,8 +2,6 @@
 
 A minimal, fast notes application built with **React** and **Vite**. Create and manage notes with a simple UI. Comes with an optional mock API using `json-server` for quick local development.
 
-> Built with the React + Vite setup (HMR, ESLint). 
-
 ---
 
 ## ✨ Features
