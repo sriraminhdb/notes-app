@@ -13,8 +13,6 @@ A minimal, fast notes application built with **React** and **Vite**. Create and 
 - Optional mock REST API via `json-server` using `db.json`
 - Developer-friendly tooling (Vite, ESLint)
 
-> Have search, tags, pinning, or dark mode? Tell me and I’ll add them here.
-
 ---
 
 ## 🏗️ Tech Stack
@@ -35,7 +33,6 @@ notes-app/
 ├─ vite.config.js # Vite config
 ├─ package.json # Scripts & deps
 └─ README.md
-
 
 ---
 
