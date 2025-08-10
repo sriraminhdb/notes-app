@@ -7,15 +7,16 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className = "App">
-        <Header />
-        <Routes>
-          <Route element={<NotesPage />} path = "/" exact/>
-          <Route element={<NotePage />} path = "/note/:id" />
-        </Routes>
+      <div className = "container dark">
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route element={<NotesPage />} path = "/" exact/>
+            <Route element={<NotePage />} path = "/note/:id" />
+          </Routes>
+        </div>
       </div>
     </Router>
-
   )
 }
 
