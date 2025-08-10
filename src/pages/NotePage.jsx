@@ -40,21 +40,24 @@ function NotePage() {
   };
 
   let createNote = async () => {
-    await fetch(`/api/notes`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({...note, 'created': new Date()})
-    });
+    if(note.body){
+      await fetch(`/api/notes`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({...note, 'created': new Date()})
+      });
+      navigate('/');
+    }
   }
 
   let handleSubmit = () => {
     if (noteId != 'new' && !note.body) {deleteNote();}
     else if (noteId != 'new') {updateNote();}
     else if (noteId === 'new' && note.body.trim() !== '') {createNote();}
+    navigate('/'); // Navigate to home after submit
   };
-
 
   return (
     <div className="note">
