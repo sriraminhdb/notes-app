@@ -17,22 +17,8 @@ A minimal, fast notes application built with **React** and **Vite**. Create and 
 
 ## 🏗️ Tech Stack
 
-- **Frontend:** React + Vite
+- **Frontend:** React 
 - **Styling:** CSS
-- **Tooling:** ESLint
-
----
-
-## 📁 Project Structure
-
-notes-app/
-├─ src/ # React components & app logic
-├─ index.html # Vite entry HTML
-├─ db.json # Mock API data (json-server)
-├─ eslint.config.js # Lint rules
-├─ vite.config.js # Vite config
-├─ package.json # Scripts & deps
-└─ README.md
 
 ---
 
