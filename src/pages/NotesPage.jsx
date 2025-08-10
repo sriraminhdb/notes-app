@@ -1,4 +1,4 @@
-import notes from "../assets/notes";
+import notes from "../assets/data";
 import ListItem from "../components/ListItem";
 
 const NotesPage = () => {
@@ -11,4 +11,4 @@ const NotesPage = () => {
   )
 }
 
-export default NotesPage
+export default NotesPage;

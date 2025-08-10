@@ -1,9 +1,16 @@
+import notes from '../assets/data';
+import { useParams } from 'react-router-dom';
 
 function NotePage() {
+  const { id } = useParams();
+  const noteId = id;
+
+  let note = notes.find(note => note.id === parseInt(noteId));
+
   return (
-    <div>
-      <h2>Note Detail</h2>
-    </div>
+    <>
+      <p>{note?.body}</p>
+    </>
   )
 }
 
