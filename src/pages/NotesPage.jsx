@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import AddButton from "../components/AddButton";
 import ListItem from "../components/ListItem";
 
 const NotesPage = () => {
@@ -26,7 +27,8 @@ const NotesPage = () => {
         {notes.map(note => (
           <ListItem key={note.id} note={note} />
         ))}
-      </div>  
+      </div>
+      <AddButton />
     </div>
   )
 }
