@@ -1,7 +1,20 @@
-import notes from "../assets/data";
+import { useState, useEffect } from "react";
 import ListItem from "../components/ListItem";
 
 const NotesPage = () => {
+
+  let [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    getNotes();
+  }, []);
+
+  let getNotes = async () => {
+    let response = await fetch("api/notes");
+    let data = await response.json();
+    setNotes(data);
+  };
+
   return (
     <div className="notes">
       <div className="notes-header">
